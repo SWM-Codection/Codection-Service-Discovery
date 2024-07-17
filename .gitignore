@@ -99,5 +99,7 @@ $RECYCLE.BIN/
 
 !application.yml
 !application.yaml
+!gradle-wrapper.jar
+!gradle-wrapper.properties
 
 build/
