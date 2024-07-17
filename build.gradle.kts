@@ -1,6 +1,7 @@
 plugins {
     id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.1.5"
+    id("com.bmuschko.docker-spring-boot-application") version "9.4.0"
     kotlin("jvm") version "1.9.24"
     kotlin("plugin.spring") version "1.9.24"
 }
@@ -45,4 +46,13 @@ kotlin {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+docker {
+    springBootApplication {
+        val eurekaPort = System.getenv("EUREKA_PORT")?.toInt() ?: 8761
+        baseImage = "ubuntu/jre:17_edge"
+        maintainer = "virtuoso"
+        ports = listOf(eurekaPort)
+    }
 }
