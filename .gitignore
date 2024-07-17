@@ -92,5 +92,10 @@ $RECYCLE.BIN/
 *.properties
 *.yml
 *.yaml
+
+# ignore .idea and .gradle
+.idea
+.gradle
+
 !application.yml
 !application.yaml
