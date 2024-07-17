@@ -100,3 +100,6 @@ gradlew.bat
 # ignore .idea and .gradle
 .idea
 .gradle
+
+!application.yml
+!application.yaml
