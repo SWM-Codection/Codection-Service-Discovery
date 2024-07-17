@@ -93,3 +93,10 @@ $RECYCLE.BIN/
 *.yml
 *.yaml
 
+# ignore changes on graldew and gradlew.bat
+gradlew
+gradlew.bat
+
+# ignore .idea and .gradle
+.idea
+.gradle
