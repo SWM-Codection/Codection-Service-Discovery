@@ -92,4 +92,5 @@ $RECYCLE.BIN/
 *.properties
 *.yml
 *.yaml
-
+!application.yml
+!application.yaml
